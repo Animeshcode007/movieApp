@@ -1,0 +1,34 @@
+.cards {
+  display: grid;
+  row-gap: 2rem;
+  margin: 2.5rem;
+  grid-template-columns: auto auto auto auto;
+}
+.card {
+  -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.49);
+  box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.49);
+}
+@media screen and (max-width: 1234px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2.5rem;
+  }
+}
+@media screen and (max-width: 935px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 2.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem;
+  }
+}
